@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/icons8-react-native-48.png" type="image/png">
+  <title>Demo JS</title>
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="background">
+      <div class="nav-tab" id="navTab">
+        <button class="active" data-tab="Project1" id="homeWork1" onclick="changeTab(event)">Bài Tập 1</button>
+        <button data-tab="Project2" id="homeWork2" onclick="changeTab(event)">Bài Tập 2</button>
+        <button data-tab="Project3" id="homeWork3" onclick="changeTab(event)">Bài Tập 3</button>
+        <button data-tab="Project4" id="homeWork4" onclick="changeTab(event)">Bài Tập 4</button>
+        <button data-tab="Project5" id="homeWork5" onclick="changeTab(event)">Bài Tập 5</button>
+      </div>
+  
+      <div class="tab-content">
+        <div id="Project1" class="tab-item show">
+          <h3>Bài Tập 1: Tính Tiền Lương Nhân Viên</h3>
+          <p>Viết chương trình tính tiền lương nhân viên: nhập vô lương 1 ngày và số ngày làm sau đó bấm nút tính tiền.</p>
+          <div class="tab__detail">
+            <input id="salary" type="number" placeholder="Lương 1 Ngày..">            
+            <input id="day" type="number" placeholder="Số Ngày Làm..">            
+          </div>
+          <button id="btnSalary">Tính Tiền Lương</button>
+          <p id="tagSalary" class="tab-result"></p>
+        </div>
+        <div id="Project2" class="tab-item">
+          <h3>Bài Tập 2: Tính Giá Trị Trung Bình</h3>
+          <p>Viết chương trình nhập vào 5 số thực và tính giá trị trung bình của 5 số này.</p>
+          <div class="tab__detail detail__b2">
+            <input id="num1" type="number" placeholder="nhập 1 số">           
+            <input id="num2" type="number" placeholder="nhập 1 số">           
+            <input id="num3" type="number" placeholder="nhập 1 số">           
+            <input id="num4" type="number" placeholder="nhập 1 số">           
+            <input id="num5" type="number" placeholder="nhập 1 số">           
+          </div>
+          <button id="btnAverage">Giá Trị Trung Bình</button>
+          <p id="tagAverage" class="tab-result"></p>
+        </div>
+        <div id="Project3" class="tab-item">
+          <h3>Bài Tập 3: Quy Đổi Tiền</h3>
+          <p>Viết chương trình đổi từ USD sang VND</p>
+          <div class="tab__detail">
+            <input id="USD" type="number" placeholder="Nhập Số tiền USD">          
+          </div>
+          <button id="btnExchange">Đổi Tiền</button>
+          <p id="tagCurrency" class="tab-result"></p>
+        </div>
+        <div id="Project4" class="tab-item">
+          <h3>Bài Tập 4: Tính Chu Vi Diện Tích Hình Chữ Nhật</h3>
+          <p>Viết chương trình nhập vào chiều dài vs chiều rộng của hình chữ nhật, tính và xuất ra diện tích và chu vi HCN đó.</p>
+          <div class="tab__detail">
+            <input id="chieuDai" type="number" placeholder="Chiều dài">            
+            <input id="chieuRong" type="number" placeholder="Chiều Rộng">            
+          </div>
+          <button id="btnChuVi">Tính chu vi</button>
+          <button id="btnDienTich">Tính diện tích</button>
+          <p id="tagHCN" class="tab-result"></p>
+        </div>
+        <div id="Project5" class="tab-item">
+          <h3>Bài Tập 5: Tính tổng 2 ký số</h3>
+          <p>Viết chương trình nhập vào 1 số có 2 chữ số và tính tổng 2 ký số vừa nhập.</p>
+          <div class="tab__detail">
+            <input id="iSo" type="number" placeholder="nhập số 2 chữ số">         
+          </div>
+          <button id="btnNumber">Tổng Ký Số</button>
+          <p id="tagIso" class="tab-result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- MAIN JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
